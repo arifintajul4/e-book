@@ -4,10 +4,10 @@ import { BookCard } from "@components/molecules"
 import { getWishlist } from "@utils/services/wihslist"
 import React, { ReactElement } from "react"
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     const books = await getWishlist()
-    return { props: { books: books }, revalidate: 3 }
+    return { props: { books: books } }
   } catch (err) {
     return { props: { books: [] } }
   }
