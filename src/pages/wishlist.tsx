@@ -1,18 +1,17 @@
-import { Box, Grid, GridItem } from '@chakra-ui/react';
-import { MainLayout } from '@components/layout';
-import { BookCard } from '@components/molecules';
-import { getWishlist } from '@utils/services/wihslist';
-import axios from 'axios';
-import React, { ReactElement, useEffect } from 'react';
+import { Box, Grid, GridItem } from "@chakra-ui/react"
+import { MainLayout } from "@components/layout"
+import { BookCard } from "@components/molecules"
+import { getWishlist } from "@utils/services/wihslist"
+import React, { ReactElement } from "react"
 
 export const getStaticProps = async () => {
   try {
-    const books = await getWishlist();
-    return { props: { books: books } };
+    const books = await getWishlist()
+    return { props: { books: books }, revalidate: 10 }
   } catch (err) {
-    return { props: { books: [] } };
+    return { props: { books: [] } }
   }
-};
+}
 
 export default function Wishlist({ books }) {
   return (
@@ -21,7 +20,7 @@ export default function Wishlist({ books }) {
         {books.map((book, index) => (
           <GridItem key={index}>
             <BookCard
-              image_url={book.image_url || ''}
+              image_url={book.image_url || ""}
               title={book.title}
               author={book.author}
               rating={book.rating}
@@ -31,9 +30,9 @@ export default function Wishlist({ books }) {
         ))}
       </Grid>
     </Box>
-  );
+  )
 }
 
 Wishlist.getLayout = function getLayout(page: ReactElement) {
-  return <MainLayout>{page}</MainLayout>;
-};
+  return <MainLayout>{page}</MainLayout>
+}
