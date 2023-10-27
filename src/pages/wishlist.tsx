@@ -7,7 +7,7 @@ import React, { ReactElement } from "react"
 export const getStaticProps = async () => {
   try {
     const books = await getWishlist()
-    return { props: { books: books }, revalidate: 10 }
+    return { props: { books: books }, revalidate: 3 }
   } catch (err) {
     return { props: { books: [] } }
   }
