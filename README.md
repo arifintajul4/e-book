@@ -1,39 +1,67 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+<p align="center">
+  <a href="https://nextjs.org">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png">
+      <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="128">
+    </picture>
+    <h1 align="center">Next.js</h1>
+  </a>
+</p>
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+<p align="center">
+  <a aria-label="Vercel logo" href="https://vercel.com">
+    <img src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
+  </a>
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/next">
+    <img alt="" src="https://img.shields.io/npm/v/next.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="License" href="https://github.com/vercel/next.js/blob/canary/license.md">
+    <img alt="" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="Join the community on GitHub" href="https://github.com/vercel/next.js/discussions">
+    <img alt="" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Next.js&labelColor=000000&logoWidth=20">
+  </a>
+</p>
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+## Getting Started
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+Visit <a aria-label="next.js learn" href="https://nextjs.org/learn">https://nextjs.org/learn</a> to get started with Next.js.
 
-## Deploy your own
+## Documentation
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui)
+Visit [https://nextjs.org/docs](https://nextjs.org/docs) to view the full documentation.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui&project-name=with-chakra-ui&repository-name=with-chakra-ui)
+## Who is using Next.js?
 
-## How to use
+Next.js is used by the world's leading companies. Check out the [Next.js Showcase](https://nextjs.org/showcase) to learn more.
 
-### Using `create-next-app`
+## Community
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+The Next.js community can be found on [GitHub Discussions](https://github.com/vercel/next.js/discussions), where you can ask questions, voice ideas, and share your projects.
 
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-```
+To chat with other community members you can join the [Next.js Discord](https://nextjs.org/discord).
 
-```bash
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
+Our [Code of Conduct](https://github.com/vercel/next.js/blob/canary/CODE_OF_CONDUCT.md) applies to all Next.js community channels.
 
-```bash
-pnpm create next-app --example with-chakra-ui with-chakra-ui-app
-```
+## Contributing
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Please see our [contributing.md](/contributing.md).
 
-## Notes
+### Good First Issues
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
+We have a list of [good first issues](https://github.com/vercel/next.js/labels/good%20first%20issue) that contain bugs that have a relatively limited scope. This is a great place to get started, gain experience, and get familiar with our contribution process.
 
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+## Authors
+
+- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens))
+- Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa))
+- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg))
+- Arunoda Susiripala ([@arunoda](https://twitter.com/arunoda))
+- Tony Kovanen ([@tonykovanen](https://twitter.com/tonykovanen))
+- Dan Zajdband ([@impronunciable](https://twitter.com/impronunciable))
+
+## Security
+
+If you believe you have found a security vulnerability in Next.js, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email `security@vercel.com` to disclose any security vulnerabilities.
+
+https://vercel.com/security
